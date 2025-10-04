@@ -1,0 +1,44 @@
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qstring theory\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qand\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qquantum field theory\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgroups at the\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qin Munich, Germany.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qvarious resources\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qat\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qin Munich (TMP program), a\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qfrom the\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qas well as a\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qfrom\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qin Lausanne, Switzerland.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qmy CV\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qfor more details.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qinterests lie at the crossroads of\\E$"}
+{"rule":"UNLIKELY_OPENING_PUNCTUATION","sentence":"^\\Q,\\E$"}
+{"rule":"UNLIKELY_OPENING_PUNCTUATION","sentence":"^\\Q, as well as a\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qscattering amplitudes\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qpositive geometry\\E$"}
+{"rule":"UNLIKELY_OPENING_PUNCTUATION","sentence":"^\\Q, including non-relativistic and tensionless strings.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qpage for a list of my publications & preprints.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q&copy; Xavier Kervyn\\E$"}
+{"rule":"GITHUB","sentence":"^\\QGithub\\E$"}
+{"rule":"LINKEDIN","sentence":"^\\QLinkedin\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qor\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qprofiles.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qprofile.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qunder the guidance of\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qhas finally been\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qpublished in JHEP\\E$"}
+{"rule":"UNLIKELY_OPENING_PUNCTUATION","sentence":"^\\Q, and continued remotely from Munich afterwards.\\E$"}
+{"rule":"UNLIKELY_OPENING_PUNCTUATION","sentence":"^\\Q, leading to a\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qin April 2025.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qat the\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qin Florence, Italy, based on\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qa recent preprint\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qwith my master's thesis supervisor,\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qpublished in Nuclear Physic B\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qin Munich, Germany!\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qstudy project\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qon the superconformal bootstrap of N=4 Super Yang-Mills with defects, carried out at the\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qunder\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qin Copenhagen, Denmark, for a few months, where I have the privilege to work under the guidance of\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qinterests span\\E$"}
