@@ -42,24 +42,6 @@
 								<li>
 									Find an up-to-date list of my contributions in theoretical physics on my <a href="https://inspirehep.net/authors/2682263?ui-citation-summary=true&ui-exclude-self-citations=true" class="active">Inspire</a> profile. 
 								</li>
-
-								<div id="inspire-stats">Loading research stats…</div>
-
-								<script>
-									async function loadInspireStats() {
-									const res = await fetch('https://inspirehep.net/api/authors/2682263');
-									const data = await res.json();
-									const stats = data.metadata.citation_count ? `
-										<ul>
-										<li><strong>Papers:</strong> ${data.metadata.publication_count}</li>
-										<li><strong>Total Citations:</strong> ${data.metadata.citation_count}</li>
-										<li><strong>h-index:</strong> ${data.metadata.h_index}</li>
-										</ul>
-									` : "No data available.";
-									document.getElementById("inspire-stats").innerHTML = stats;
-									}
-									loadInspireStats();
-								</script>
 							</ul>
 
 							<h3>Academic Journey</h3>
