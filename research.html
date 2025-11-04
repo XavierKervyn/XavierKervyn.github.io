@@ -56,15 +56,38 @@
 				<!-- Two -->
 					<section id="research">
 						<h2>News</h2>
-							<p>
-								<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7319958836205813760" height="300" width="100%" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
-							</p>
-							<p>
-								<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7297150813288706050" height="300" width="100%" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
-							</p>
-							<p>
-								<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7240062393265844224" height="300" width="100%" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
-							</p>
+							<style>
+								.linkedin-grid {
+									display: flex;
+									flex-wrap: wrap;          /* allows wrapping on small screens */
+									gap: 1rem;                /* space between posts */
+									justify-content: center;  /* center content */
+								}
+
+								.linkedin-grid iframe {
+									flex: 1 1 48%;            /* roughly two per row */
+									min-width: 300px;         /* prevents them from shrinking too small */
+									height: 500px;            /* adjust depending on post length */
+									border: none;
+								}
+
+								@media (max-width: 700px) {
+									.linkedin-grid iframe {
+									flex: 1 1 100%;         /* stack vertically on phones */
+									}
+								}
+							</style>
+
+							<div class="linkedin-grid">
+							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7319958836205813760"
+								title="LinkedIn Post 1" allowfullscreen></iframe>
+
+							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7297150813288706050"
+								title="LinkedIn Post 2" allowfullscreen></iframe>
+
+							<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7240062393265844224"
+								title="LinkedIn Post 3" allowfullscreen></iframe>
+							</div>
 					</section>
 
 				<section id="confs">
