@@ -38,10 +38,89 @@
 							</ul>
 							
 							<h3>Publications & Preprints</h3>
+							<style type="text/css">
+		
+								.publication-card {
+									border: 1px solid var(--card-border);
+									border-radius: 4px;
+									padding: 1.5rem;
+									margin-bottom: 1rem; /* space between cards */
+									transition: transform 0.3s ease, box-shadow 0.3s ease;
+									background: var(--card-bg);
+									margin: 0.5rem 0; /* top and bottom 0.5rem, no horizontal margin */
+								}
+
+								.publication-card:hover {
+									transform: translateY(-4px);
+									box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+								}
+
+								.publication-card img {
+									border-radius: 6px;
+									width: 100%; /* size of the image */
+									height: auto;
+								}
+
+								.publication-card h4 {
+									color: var(--primary-color);
+									font-weight: 600;
+									margin-top: 0.5rem;
+  									margin-bottom: 1rem;
+								}
+
+								.publication-card a {
+									color: var(--accent-color);
+									text-decoration: none;
+									font-weight: 500;
+								}
+
+								.publication-card a:hover {
+									text-decoration: underline;
+								}
+
+								/* Mobile responsive hero */
+								@media (max-width: 768px) {
+									.publication-card img {
+										width: 80%;
+										height: auto;
+									}
+								}
+
+								.publication-card p:last-child {
+  									margin-bottom: 0; /* remove space after last line */
+								}
+							</style>
 							<ul>
 								<li>
 									Please see <a href="https://inspirehep.net/authors/2682263?ui-citation-summary=true&ui-exclude-self-citations=true" class="active">my Inspire profile</a> for an up-to-date list of my contributions in theoretical physics and citations. 
 								</li>
+								<li>
+									Most recent work:
+								</li>
+								<div class="publication-card">
+									<div class="row">
+										<!--
+										<div class="col-4 col-md-2">
+											<img src="images/pdp.jpg" alt="Two-Point Deterministic Equivalence">
+										</div>
+										-->
+										<div class="col-12 col-md-10">
+											<h4>High Energy String Theory and the Celestial Sphere</h4>
+											<p style="text-align: justify;">
+												Work with <a href="https://inspirehep.net/authors/987502?ui-citation-summary=true" class="active">Stephan Stieberger</a>. We elaborate on the connection between the high-energy limit of the string worldsheet and flat-space (celestial) holography at tree level, using steepest descent methods. This reveals a dual description which organizes large-energy expansions on the celestial sphere in terms higher-spin modes of the string, and suggests a worldsheet-based construction of celestial CFT. We also analyze subleading corrections and number-theoretic aspects of open and closed string amplitudes, relevant for tensionless strings.
+											</p>
+											<p><strong>(2025) <em>Journal of High Energy Physics</em></strong>
+												<a href="https://inspirehep.net/literature/2913818">[InspireHEP]</a>
+												<a href="https://arxiv.org/abs/2504.13738">[arXiv]</a>
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<details>
+								<summary>See more</summary>
+								To be added shortly :)
+								</details>
 							</ul>
 
 							<h3>Academic Journey</h3>
@@ -87,7 +166,7 @@
 							</div>
 							<p></p>
 							<details>
-								<summary>More</summary>
+								<summary>See more</summary>
 								<div class="linkedin-grid">
 									<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7240062393265844224"
 									title="LinkedIn Post 1" allowfullscreen></iframe>
