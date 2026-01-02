@@ -25,13 +25,71 @@
 
 		<!-- Main -->
 			<div id="main">
+				<style type="text/css">
+
+					.publication-card {
+						border: 1px solid var(--card-border);
+						border-radius: 4px;
+						padding: 1.5rem;
+						margin-bottom: 1rem; /* space between cards */
+						transition: transform 0.3s ease, box-shadow 0.3s ease;
+						background: var(--card-bg);
+						margin: 0.5rem 0; /* top and bottom 0.5rem, no horizontal margin */
+						background-color: #f5f7fa;  /* light neutral background */
+						border-radius: 0.75rem;
+					}
+
+					.publication-card :last-child {
+					margin-bottom: 0;
+					}
+
+					.publication-card:hover {
+						transform: translateY(-4px);
+						box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+					}
+
+					.publication-card img {
+						border-radius: 6px;
+						width: 100%; /* size of the image */
+						height: auto;
+					}
+
+					.publication-card h4 {
+						color: var(--primary-color);
+						font-weight: 600;
+						margin-top: 0.5rem;
+						margin-bottom: 1rem;
+					}
+
+					.publication-card a {
+						color: var(--accent-color);
+						text-decoration: none;
+						font-weight: 500;
+					}
+
+					.publication-card a:hover {
+						text-decoration: underline;
+					}
+
+					/* Mobile responsive hero */
+					@media (max-width: 768px) {
+						.publication-card img {
+							width: 80%;
+							height: auto;
+						}
+					}
+
+					.publication-card p:last-child {
+						margin-bottom: 0; /* remove space after last line */
+					}
+				</style>
+
 				<!-- One -->
 					<section id="intro">
 						<header class="major">
 							<h2>Notes & Resources</h2>
-							<p> A compilation of lecture notes, moocs and webpages which I have found being worth browsing along the way.
-									Unless stated otherwise, all resources are available in English.
-									This page is under construction, so it might be a bit messy in some places :) Some links might also be broken; in that case please reach out and I'll try to fix it.
+							<p> 
+								A compilation of lecture notes, MOOCs and webpages which I have found being worth browsing along the way. Unless stated otherwise, all resources are available in English. This page is under construction, so it might be a bit messy in some places :) Some links might also be broken; in that case please reach out and I'll try to fix it.
  							</p>
 						</header>
 					</section>
@@ -39,140 +97,265 @@
 				<!-- Two -->
 					<section id="resources">
 
-						<h1>Undergraduate</h1>
-							<h2>Mathematics</h2>
+						<details>
+							<summary class="h2">> Undergraduate mathematics</summary>
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
 									<ol>
-										<li>Hundreds of exercises (in French) to practice differential calculus and analysis:
-											Analyse - recueil d’exercices et aide mémoire. (Jacques Douchet)
-											 <a href="https://www.epflpress.org/produit/346/9782880748920/analyse-volume-1" class="active">Vol.1</a>
-											 and <a href="https://www.epflpress.org/product/347/9782880745707/analyse-volume-2" class="active">Vol.2</a>.
-										<li> Check out the videos of <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" class="active">3Blue1Brown</a>,
+										<li>
+											Hundreds of exercises (in French) to practice differential calculus and analysis: Analyse - recueil d’exercices et aide mémoire. (Jacques Douchet) <a href="https://www.epflpress.org/produit/346/9782880748920/analyse-volume-1" class="active">Vol.1</a> and <a href="https://www.epflpress.org/product/347/9782880745707/analyse-volume-2" class="active">Vol.2</a>.</li>
+										<li> 
+											Check out the videos of <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" class="active">3Blue1Brown</a>,
 											<a href="https://www.youtube.com/channel/UCrlZs71h3mTR45FgQNINfrg" class="active">Mathemaniac</a>,
 											<a href="https://www.youtube.com/channel/UC1_uAIS3r8Vu6JjXWvastJg" class="active">Mathologer</a>,
 											<a href="https://www.youtube.com/channel/UC6jM0RFkr4eSkzT5Gx0HOAw" class="active">Michael Penn</a>,
 											<a href="https://www.youtube.com/channel/UCo8T0D8my1Hz5KoHCRYOAnQ" class="active">Mu Prime Maths</a>,
-											<a href="https://www.youtube.com/user/numberphile" class="active">Numberphile</a>,
-												and <a href="https://www.youtube.com/@blackpenredpen" class="active">blackpenredpen</a> on YouTube (integration, differential equations, etc.).
+											<a href="https://www.youtube.com/user/numberphile" class="active">Numberphile</a>, and <a href="https://www.youtube.com/@blackpenredpen" class="active">blackpenredpen</a> on YouTube (integration, differential equations, etc.).</li>
+									</ol>
+								</div>
+								</div>
+							</div>
+						</details>	
+
+						<details>
+							<summary class="h2"> > Undergraduate physics</summary>
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>Statistical Physics</h3> 
+									<ol>
+										<li> 
+											I found the first chapters quite clear:	<a href="https://www.wiley.com/en-us/Statistical+Mechanics%2C+2nd+Edition-p-9780471815181" class="active">Statistical Physics (2 ed)</a>, Huang. </li>
+										<li> 
+											These were the <a href="https://edu.itp.phys.ethz.ch/hs14/StatPhys/" class="active">lecture notes</a> of the course I took, lectured by Prof. Manfred Sigrist. </li>
+										<li> 
+											I can’t but recommend checking out <a href="http://www.damtp.cam.ac.uk/user/tong/statphys.html" class="active">Prof. Tong’s lecture notes</a> (it might be worth checking out the notes on <a href="https://www.damtp.cam.ac.uk/user/tong/sft.html" class="active">Statistical Field theory</a> as well, but this is definitely graduate level).</li>
+									</ol>
+								</div>
+								</div>
+							</div>
+							
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>Classical Electrodynamics</h3>
+									<ol>
+										<li> 
+											The perfect introduction at an undergraduate level: <a href="https://www.cambridge.org/highereducation/books/introduction-to-electrodynamics/3AB220820DBB628E5A43D52C4B011ED4" class="active">Introduction to electrodynamics</a>,	Griffiths.</li>
+										<li> 
+											My personal favourite, very complete and with lots of exercises: <a href="https://www.cambridge.org/highereducation/books/modern-electrodynamics/E5448C70CBF3651B2056F28EBF859AE9" class="active">	Modern Electrodynamics</a>, Zangwill.</li>
+									</ol>
+									</div>
+								</div>
+							</div>
+
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>Quantum Mechanics</h3>
+									<ol>
+										<li> 
+											On the path integral approach	to Quantum Mechanics: <a href="https://books.google.com/books/about/Quantum_Mechanics_and_Path_Integrals.html?id=JkMuDAAAQBAJ" class="active"> Quantum Mechanics and Path Integrals</a>,	Feynman. For a first contact with QM, I would rather recommend the Hamiltonian approach: <a href="https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E" class="active"> Introduction to Quantum Mechanics</a>,	Griffiths.</li>
+										<li> 
+											Notes of Noah Miller on	<a href="https://scholar.harvard.edu/files/noahmiller/files/representation_theory_and_quantum_mechanics.pdf" class="active">	Representation Theory and Quantum Mechanics</a>, very well written.</li>
+										<li> 
+											Good book on the use of group theory in QM: <a href="https://link.springer.com/book/10.1007/978-3-319-64612-1" class="active"> Quantum Theory, Groups and Representations</a>, Woit. </li>
+										<li> 
+											Representation theory in QM: <a href="https://math.nd.edu/assets/275276/greg_greif.pdf" class="active">Understanding Quantum Mechanical Systems with Spherical Symmetry via Representations of Lie Groups</a>, Greif. </li>
+										<li> 
+											To practice before the exam:	<a href="https://www.cambridge.org/core/books/problems-and-solutions-in-quantum-mechanics/4519352E4095A3738328214F3F27C571" class="active">Problems and Solutions in Quantum Mechanics</a>,	Tamvakis. </li>
+									</ol>
+								</div>
+								</div>
+							</div>
+
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>Particle and Nuclear Physics</h3>
+									<ol>
+										<li>
+											The classic introductory textbooks on the subject are <a href="https://link.springer.com/book/10.1007/978-3-030-80116-8" class="active">The Basis of Nuclear and Particle Physics</a> by Belyaev and Ross, <a href="https://link.springer.com/book/10.1007/978-3-642-57920-2" class="active">Techniques for Nuclear and Particle Physics Experiments</a> by W.R. Leo, and <a href="http://www.gammaexplorer.com/wp-content/uploads/2014/03/Particle-Physics-3rd-Ed.pdf" class="active">Particle Physics (3rd. ed.)</a> by B.R. Martin.</li>
+										<li>
+											To practice: <a href="https://www.worldscientific.com/worldscibooks/10.1142/4139#t=aboutBook" class="active">Problems and Solutions of Atomic, Nuclear and Particle Physics</a>, by Yung-Kuo Lim.</li>
+									</ol>
+								</div>
+								</div>
+							</div>
+						</details>
+						
+
+						<details>
+						<summary class="h2">> Graduate physics</summary>
+
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>Quantum Field Theory</h3>
+									<ol>
+										<li> My favorite: <a href="https://indico.ihep.ac.cn/event/11134/attachments/3783/4308/QFT-Schwartz.pdf" class="active">QFT and the Standard Model</a>, by Matt Schwartz. Easier to read than Weinberg.</li>
+										<li> Tong's <a href="https://www.damtp.cam.ac.uk/user/tong/qft.html" class="active">notes on QFT</a>, used for the first part of the course in Cambridge. Only canonical quantization.</li>
+										<li> The <a href="https://users.ph.nat.tum.de/ga49yar/23ws-qft/" class="active">notes</a> of Prof. Beneke for the course I took at TUM. Based on Weinberg, with a focus on path integral techniques. The best introduction to renormalization I've seen. See also the <a href="https://www.ph.nat.tum.de/t75/teaching/ws19-quantum-field-theory-tum-and-tmp/" class="active">typed script</a> of Prof. Weiler, which follows closely the notes of Beneke. The exercises are also very good. </li>
+										<li> Tong, <a href="http://www.damtp.cam.ac.uk/user/tong/gaugetheory.html" class="active">Gauge Theory</a>. Additional, but useful details. Very complete set of notes. </li>
+										<li> Nair, <a href="https://link.springer.com/book/10.1007/b106781" class="active">Quantum Field Theory, A Modern Perspective</a>. Also discusses strongly coupled theories.</li>
+										<li>See the lecture notes of Prof. Tancredi (TUM) on <a href="https://www.ph.nat.tum.de/ttpmath/teaching/ss-2025/" class="active">Advanced QFT</a>.</li>
+									</ol>
+								</div>
+								</div>
+							</div>
+
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>General Relativity</h3>
+									<ol>
+										<li> Caroll, <a href="https://www.cambridge.org/highereducation/books/spacetime-and-geometry/38EDABF9E2BADCE6FBCF2B22DC12BFFE" class="active">Spacetime and Geometry</a>. Easy to read, good introduction.</li>
+										<li> Harvey Reall, <a href="https://www.damtp.cam.ac.uk/user/hsr1000/lecturenotes_2012.pdf" class="active">Part III General Relativity</a>. Lecture notes used when in Cambridge.</li>
+										<li> And the follow-up notes on black holes by <a href="https://arxiv.org/abs/gr-qc/9707012" class="active>">Townsend</a> and <a href="https://www.damtp.cam.ac.uk/user/hsr1000/black_holes_lectures_2016.pdf" class="active">Reall</a>. Both excellent.
+										<li> Compère & Fiorucci's <a href="https://arxiv.org/abs/1801.07064" class="active">Advanced Lectures on General Relativity</a> deal with topics that are not usually mentionned elsewhere, while <a href="http://xdel.ru/downloads/lgbooks/Misner%20C.W.%2C%20Thorne%20K.S.%2C%20Wheeler%20J.A.%20Gravitation%20%28Freeman%2C%201973%29%28K%29%28T%29%281304s%29_PGr_.pdf" class="active">MTW</a> gives the good old introduction to GR.
+									</ol>
+								</div>
+								</div>
+							</div>
+
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>Symmetries in Physics, Lie Groups & Representation Theory</h3>
+									<ol>
+										<li> Hall, <a href="https://link.springer.com/book/10.1007/978-3-319-13467-3" class="active">Lie Groups, Lie Algebras and Representations</a>, the reference textbook.</li>
+										<li> Humphreys, <a href="https://link.springer.com/book/10.1007/978-1-4612-6398-2" class="active">Introduction to Lie Algebras and Representation Theory</a> slightly easier to read.</li>
+										<li> Ashok Das, <a href="https://www.worldscientific.com/worldscibooks/10.1142/9169" class="active">Lie Groups and Lie Algebras for Physicists</a>, lacking some maths but fairly intuitive.</li>
+										<li> Ian Lim, <a href="https://lim.physics.ucdavis.edu/teaching/files/sfp-notes-partiii.pdf" class="active">Symmetries, Field and Particles</a>, based on the course I had in Cambridge (Prof. Dorey).</li>
+										<li> Fuchs, Schweigert, <a href="https://www.cambridge.org/0521541190" class="active">Symmetries, Lie Algebras and Representations: a Graduate course for Physicists</a>.</li>
+									</ol>
+								</div>
+								</div>
+							</div>
+
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>Supersymmetry</h3>
+									<ol>
+										<li> 
+											The lecture notes of Prof. Tong, on <a href="http://www.damtp.cam.ac.uk/user/tong/susy.html" class="active">SUSY & Duality</a>. Prof. Tong was my lecturer in Cambridge.</li>
+										<li> 
+											Muller-Kirsten, <a href="https://www.worldscientific.com/worldscibooks/10.1142/7594#t=aboutBook" class="active">Introduction to Supersymmetry</a>. I used this book a few times to check calculations, most of them are done in great detail, where other authors would just omit the steps.</li>
+										<li> 
+											It can also be worth looking at Prof. Tong's notes on <a href="https://www.damtp.cam.ac.uk/user/tong/gaugetheory.html" class="active">Gauge Theory</a>.</li>
+										<li>
+											The lecture notes of <a href="https://www.sissa.it/tpp/phdsection/OnlineResources/6/susycourse.pdf" class="active">Bertolini</a> are a must!
 										</li>
 									</ol>
+								</div>
+								</div>
+							</div>
 
-							<h2>Physics</h2>
-								<h3>Statistical Physics</h3>
-								The following is based on a Master-level course I took while at ETHZ (3rd year of my BSc. in Physics), having already had an education
-								in Thermodynamics.
-								<ol>
-									<li> I found the first chapters quite clear:	<a href="https://www.wiley.com/en-us/Statistical+Mechanics%2C+2nd+Edition-p-9780471815181" class="active">Statistical Physics (2 ed)</a>,	Huang</li>
-									<li> These were the <a href="https://edu.itp.phys.ethz.ch/hs14/StatPhys/" class="active">lecture notes</a> of the course I took, lectured by Prof. Manfred Sigrist. </li>
-									<li> As always, I can’t but recommend checking out <a href="http://www.damtp.cam.ac.uk/user/tong/statphys.html" class="active">Prof. Tong’s lecture notes</a> (it might be worth checking out the notes on <a href="https://www.damtp.cam.ac.uk/user/tong/sft.html" class="active">Statistical Field theory</a> as well, but this is definitely graduate level).</li>
-								</ol>
-
-								<h3>Classical Electrodynamics</h3>
-								<ol>
-									<li> The perfect introduction at an undergraduate level: <a href="https://www.cambridge.org/highereducation/books/introduction-to-electrodynamics/3AB220820DBB628E5A43D52C4B011ED4" class="active">Introduction to electrodynamics (4. ed)</a>,	Griffiths</li>
-									<li> My favourite, very complete and with lots of exercises: <a href="https://www.cambridge.org/highereducation/books/modern-electrodynamics/E5448C70CBF3651B2056F28EBF859AE9" class="active">	Modern Electrodynamics</a>, Zangwill</li>
-								</ol>
-
-								<h3>Quantum Mechanics</h3>
-								<ol>
-									<li> On the path integral approach	to Quantum Mechanics, by the great Feynman: <a href="https://books.google.com/books/about/Quantum_Mechanics_and_Path_Integrals.html?id=JkMuDAAAQBAJ" class="active"> Quantum Mechanics and Path Integrals</a>,	Feynman. For a first contact with QM, I would rather recommend the Hamiltonian approach (eg. Griffiths).</li>
-									<li> Perfect for a first course on QM at an undergraduate level: <a href="https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E" class="active"> Introduction to Quantum Mechanics</a>,	Griffiths</li>
-									<li> Notes of Noah Miller on	<a href="https://scholar.harvard.edu/files/noahmiller/files/representation_theory_and_quantum_mechanics.pdf" class="active">	Representation Theory and Quantum Mechanics</a>, very well written.</li>
-									<li> Very interesting book on the use of symmetries in QM by Zwicky: <a href="https://www2.ph.ed.ac.uk/~rzwicky2/SoQM/romanSoQM_2015.pdf" class="active">Symmetries of Quantum Mechanics</a></li>
-									<li> Good book on the use of group theory in QM: <a href="https://link.springer.com/book/10.1007/978-3-319-64612-1" class="active"> Quantum Theory, Groups and Representations</a>, Woit</li>
-									<li> Representation theory in QM <a href="https://math.nd.edu/assets/275276/greg_greif.pdf" class="active">Understanding Quantum Mechanical Systems with Spherical Symmetry via Representations of Lie Groups</a>, Greif</li>
-									<li> Before the exam:	<a href="https://www.cambridge.org/core/books/problems-and-solutions-in-quantum-mechanics/4519352E4095A3738328214F3F27C571" class="active">Problems and Solutions in Quantum Mechanics</a>,	Tamvakis</li>
-								</ol>
-
-								<h3>Particle and Nuclear Physics</h3>
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>String Theory</h3>
 									<ol>
-										<li>Good introductory book on the subject: <a href="https://link.springer.com/book/10.1007/978-3-030-80116-8" class="active">The Basis of Nuclear and Particle Physics</a>, by Belyaev and Ross.</li>
-										<li>Summary of the experimental concepts: <a href="https://link.springer.com/book/10.1007/978-3-642-57920-2" class="active">Techniques for Nuclear and Particle Physics Experiments</a>, W.R. Leo.</li>
-										<li>Another good textbook on the subject: <a href="http://www.gammaexplorer.com/wp-content/uploads/2014/03/Particle-Physics-3rd-Ed.pdf" class="active">Particle Physics (3rd. ed.)</a>, by B.R. Martin.</li>
-										<li>To practice: <a href="https://www.worldscientific.com/worldscibooks/10.1142/4139#t=aboutBook" class="active">Problems and Solutions of Atomic, Nuclear and Particle Physics</a>, by Yung-Kuo Lim.</li>
+										<li> 
+											Tong, <a href="https://www.damtp.cam.ac.uk/user/tong/string.html" class="active">String Theory</a>. Notes I used in Cambridge. Great introduction to bosonic strings. </li>
+										<li> 
+											My favourite, <a href="https://link.springer.com/book/10.1007/978-3-642-29497-6" class="active">Basic Concepts of String Theory</a> by Blumenhagen, Lüst and Theisen. </li>
+										<li> 
+											I really liked <a href="https://nucleares.unam.mx/~alberto/apuntes/bbs.pdf" class="active">Becker-Becker-Schwarz</a>, easy to read.
+										<li> 
+											The amazing <a href="https://www.stringwiki.org/wiki/String_Theory_Wiki" class="active">String Theory Wiki</a> contains plently reviews, resources, conferences, etc.</li>
 									</ol>
+								</div>
+								</div>
+							</div>
 
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>Solitons, Instantons, Twistor Theory</h3>
+									<ol>
+										<li> 
+											Adamo, <a href="https://arxiv.org/abs/1712.02196" class="active">Lectures on Twistor Theory</a>. A very good place to start with twistors.</li>
+										<li>
+											TBC.</li>
+									</ol>
+								</div>
+								</div>
+							</div>
+						</details>
 
-						<h1>Graduate</h1>
-							<p>The following are from the courses I took or am currently taking in Cambridge/Munich. I have also included some that I've browsed for my independent study.
-								 As you might notice, my interests are heavily HEP & GR-focused!</p>
+						<details>
+						<summary class="h2">> Research-specific, reviews</summary>
 
-							<h2>Theoretical Physics</h2>
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>Flat-space holography</h3>
+									<ol>
+										<li> TBC </li>
+									</ol>
+								</div>
+								</div>
+							</div>
 
-								<h3>Quantum Field Theory</h3>
-								<ol>
-									<li> My favorite: <a href="https://indico.ihep.ac.cn/event/11134/attachments/3783/4308/QFT-Schwartz.pdf" class="active">QFT and the Standard Model</a>, by Matt Schwartz. Easier to read than Weinberg.</li>
-									<li> Tong's <a href="https://www.damtp.cam.ac.uk/user/tong/qft.html" class="active">notes on QFT</a>, used for the first part of the course in Cambridge. Only canonical quantization.</li>
-									<li> The <a href="https://users.ph.nat.tum.de/ga49yar/23ws-qft/" class="active">notes</a> of Prof. Beneke for the course I took at TUM. Based on Weinberg, with a focus on path integral techiques. The best introduction to renormalization I've seen. </li>
-									<li> Tong, <a href="http://www.damtp.cam.ac.uk/user/tong/gaugetheory.html" class="active">Gauge Theory</a>. Additional, but useful details.</li>
-									<li> Nair, <a href="https://link.springer.com/book/10.1007/b106781" class="active">Quantum Field Theory, A Modern Perspective</a>. Includes strongly coupled theories.</li>
-								</ol>
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>String amplitudes</h3>
+									<ol>
+										<li> TBC </li>
+									</ol>
+								</div>
+								</div>
+							</div>
 
-								<h3>Topological Quantum Field Theory</h3>
-								<ol>
-									<li> TBC </li>
-								</ol>
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>Positive Geometry and Surfaceology</h3>
+									<ol>
+										<li> Check out the lectures of Song He at Amplitudes 2025 on Surfaceology: <a href="https://www.youtube.com/watch?v=F7HH4-oGVT8&list=WL&index=36&t=7s" class="active">#1</a>, <a href="https://youtu.be/-v5ckicoFrk?si=n1zODZvZ_uHfSrbo" class="active">#2</a> and <a href="https://youtu.be/BGoM8hBMPZ0?si=CbUV1J-4S2oThbxv" class="active">#3</a>.</li>
+									</ol>
+								</div>
+								</div>
+							</div>
 
-								<h3>General Relativity</h3>
-								<ol>
-									<li> Caroll, <a href="https://www.cambridge.org/highereducation/books/spacetime-and-geometry/38EDABF9E2BADCE6FBCF2B22DC12BFFE" class="active">Spacetime and Geometry</a>. Easy to read, good introduction.</li>
-									<li> Harvey Reall, <a href="https://www.damtp.cam.ac.uk/user/hsr1000/lecturenotes_2012.pdf" class="active">Part III General Relativity</a>. Lecture notes used when in Cambridge.</li>
-									<li> And the follow-up notes on black holes by <a href="https://arxiv.org/abs/gr-qc/9707012" class="active>">Townsend</a> and <a href="https://www.damtp.cam.ac.uk/user/hsr1000/black_holes_lectures_2016.pdf" class="active">Reall</a>. Both excellent.
-									<li> Compère & Fiorucci's <a href="https://arxiv.org/abs/1801.07064" class="active">Advanced Lectures on General Relativity</a> deal with topics that are not usually mentionned elsewhere, while <a href="http://xdel.ru/downloads/lgbooks/Misner%20C.W.%2C%20Thorne%20K.S.%2C%20Wheeler%20J.A.%20Gravitation%20%28Freeman%2C%201973%29%28K%29%28T%29%281304s%29_PGr_.pdf" class="active">MTW</a> gives the good old introduction to GR.
-								</ol>
+							<div class="publication-card">
+								<div class="row">
+								<div class="col-12 col-md-10">
+									<h3>Non-Lorentzian string theory</h3>
+									<ol>
+										<li> TBC </li>
+									</ol>
+								</div>
+								</div>
+							</div>
 
-								<h3>Symmetries in Physics, Lie Groups & Representation Theory</h3>
-								<ol>
-									<li> Hall, <a href="https://link.springer.com/book/10.1007/978-3-319-13467-3" class="active">Lie Groups, Lie Algebras and Representations</a>, the reference textbook.</li>
-									<li> Humphreys, <a href="https://link.springer.com/book/10.1007/978-1-4612-6398-2" class="active">Introduction to Lie Algebras and Representation Theory</a> slightly easier to read.</li>
-									<li> Ashok Das, <a href="https://www.worldscientific.com/worldscibooks/10.1142/9169" class="active">Lie Groups and Lie Algebras for Physicists</a>, lacking some maths but fairly intuitive</li>
-									<li> Ian Lim, <a href="https://lim.physics.ucdavis.edu/teaching/files/sfp-notes-partiii.pdf" class="active">Symmetries, Field and Particles</a>, based on the course of Cambridge (Dorey)</li>
-									<li> Fuchs, Schweigert, <a href="https://www.cambridge.org/0521541190" class="active">Symmetries, Lie Algebras and Representations: a Graduate course for Physicists</a>. Very good.</li>
-								</ol>
+						</details>
 
-								<h3>Generalized & Non-Invertible Symmetries</h3>
-								<ol>
-									<li> TBC </li>
-								</ol>
-
-								<h3>Supersymmetry</h3>
-								<ol>
-									<li> The lecture notes of Prof. Tong, on <a href="http://www.damtp.cam.ac.uk/user/tong/susy.html" class="active">SUSY & Duality</a>. Prof. Tong was my lecturer in Cambridge.</li>
-									<li> Muller-Kirsten, <a href="https://www.worldscientific.com/worldscibooks/10.1142/7594#t=aboutBook" class="active">Introduction to Supersymmetry</a>. I used this book a few times to check calculations, most of them are done in great detail, where other authors would just omit the steps.</li>
-									<li> It can also be worth lookg at Prof. Tong's notes on <a href="https://www.damtp.cam.ac.uk/user/tong/gaugetheory.html" class="active">Gauge Theory</a>, especially when looking at (S)QCD.</li>
-								</ol>
-
-								<h3>String Theory</h3>
-								<ol>
-									<li> Tong, <a href="https://www.damtp.cam.ac.uk/user/tong/string.html" class="active">String Theory</a>. Notes I used in Cambridge. Great introduction to bosonic strings. </li>
-									<li> My favourite, <a href="https://link.springer.com/book/10.1007/978-3-642-29497-6" class="active">Basic Concepts of String Theory</a> by Blumenhagen, Lüst and Theisen. </li>
-									<li> I really liked <a href="https://nucleares.unam.mx/~alberto/apuntes/bbs.pdf" class="active">Becker-Becker-Schwarz</a> & Timo Weigand's <a href="https://www.thphys.uni-heidelberg.de/courses/weigand/Strings11-12.pdf" class="active">notes</a>, especially for superstrings and M-theory.
-									<li> The amazing <a href="https://www.stringwiki.org/wiki/String_Theory_Wiki" class="active">String Theory Wiki</a> contains plently reviews, resources, conferences, etc.</li>
-									<li> Bilal has excellent <a href="https://arxiv.org/abs/0802.0634" class="active">lecture notes on anomalies</a>, with a chapter dedicated to their role in string theory. </li>
-								</ol>
-
-								<h3>Solitons, Instantons, Twistor Theory</h3>
-								<ol>
-									<li> Adamo, <a href="https://arxiv.org/abs/1712.02196" class="active">Lectures on Twistor Theory</a>. A very good place to start with twistors.</li>
-									<li> I mainly used Vandoren <a href="https://arxiv.org/abs/0802.1862" class="active">Lectures on Instantons</a> and Tong's <a href="https://arxiv.org/abs/hep-th/0509216" class="active">TASI Lectures on Solitons</a>.
-									<li> CERN's lecture notes on <a href="https://laces.web.cern.ch/LACES14/notes/Inst14.pdf" class="active">Instantons in Gauge theories</a>, or <a href="https://arxiv.org/abs/hep-th/0206063" class="active">this paper</a> by Dorey et al.
-										also provided useful additional details, for instance on the ADHM construction.</li>
-								</ol>
-
-						<h1>General websites</h1>
-						<ol>
-							<li> Archives of the Institute for Theoretical Physics at ETH Zürich: <a href="http://edu.itp.phys.ethz.ch/" class="active"> ITP Lecture Archive</a>.</li>
-							<li> Archives of the lectures at MIT: <a href="https://ocw.mit.edu/" class="active"> MIT OpenCourseware</a>. Quite time-consuming though.
-							<li> Teaching page of Prof. Tong at the University of Cambridge: <a href="http://www.damtp.cam.ac.uk/user/tong/teaching.html" class="active"> David Tong</a>, aka the god of teaching.</li>
-							<li> Ressources of the <a href="https://www.archim.org.uk/resources/" class="active">Archimedeans</a>, the Cambridge University Mathematical Society.</li>
-							<li> Archives (lectures notes + example sheets) of the <a href="http://www.damtp.cam.ac.uk/user/examples/indexP3.html" class="active">Part III in Applied Mathematics</a>
-								at the University of Cambridge</li>
-							<li> Archives of the <a href="http://www.damtp.cam.ac.uk/user/examples/" class="active">Examples</a> for the Mathematical Tripos (undergraduate curriculum)
-								at Cambridge.
-							<li> Online courses at the <a href="https://perimeterinstitute.ca/online-courses" class="active">Perimeter Institute</a></li>
-							<li> Excellent lectures on the <a href="https://www.fau.tv/course/id/242.html" class="active">Geometrical anatomy of Theoretical Physics</a> by
-								Prof. Schüller</li>
-							<li> The great <a href="https://www.stringwiki.org/wiki/String_Theory_Wiki" class="active">String Theory Wiki</a>, with dozens of resources, reviews, etc.
-						</ol>
+						<details>
+						<summary class="h2">> General websites</summary>
+							<div class="publication-card">
+									<div class="row">
+									<div class="col-12 col-md-10">
+										<ol>
+											<li> Archives of the Institute for Theoretical Physics at ETH Zürich: <a href="http://edu.itp.phys.ethz.ch/" class="active"> ITP Lecture Archive</a>.</li>
+											<li> Archives of the lectures at MIT: <a href="https://ocw.mit.edu/" class="active"> MIT OpenCourseware</a>. Quite time-consuming though.
+											<li> Teaching page of Prof. Tong at the University of Cambridge: <a href="http://www.damtp.cam.ac.uk/user/tong/teaching.html" class="active"> David Tong</a>, aka the god of teaching.</li>
+											<li> Resources of the <a href="https://www.archim.org.uk/resources/" class="active">Archimedeans</a>, the Cambridge University Mathematical Society.</li>
+											<li> Archives of the <a href="http://www.damtp.cam.ac.uk/user/examples/indexP3.html" class="active">Part III in Applied Mathematics</a> at the University of Cambridge</li>
+											<li> Archives of the <a href="http://www.damtp.cam.ac.uk/user/examples/" class="active">Examples</a> for the Mathematical Tripos (undergraduate curriculum) at Cambridge.
+											<li> Online courses at the <a href="https://perimeterinstitute.ca/online-courses" class="active">Perimeter Institute</a></li>
+											<li> Excellent lectures on the <a href="https://www.fau.tv/course/id/242.html" class="active">Geometrical anatomy of Theoretical Physics</a> by
+												Prof. Schüller</li>
+											<li> The great <a href="https://www.stringwiki.org/wiki/String_Theory_Wiki" class="active">String Theory Wiki</a>, with dozens of resources, reviews, etc.
+										</ol>
+									</div>
+								</div>
+							</div>
+						</details>
 			</div>
 
 		<!-- Footer -->
@@ -187,7 +370,7 @@
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Xavier Kervyn</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						<li>Page last updated in May 2023</li>
+						<li>Page last updated in Jan. 2026</li>
 					</ul>
 				</div>
 			</footer>
