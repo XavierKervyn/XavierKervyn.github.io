@@ -3228,9 +3228,19 @@ input, select, textarea {
 
 	}
 
+/* Slick photography slider */
+
+.photo-slider {
+  margin-top: 2em;
+}
+
+.photo-slider .slick-slide {
+  margin-right: 12px;
+}
+
 .photo-slider img {
   height: 320px;
   width: auto;
   display: block;
-  margin-right: 10px;
+  border-radius: 0.35em;
 }
