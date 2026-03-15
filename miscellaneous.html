@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	</head>
 	<body class="is-preload">
 
@@ -47,7 +49,7 @@
 							Snippets of Belgium, France, Switzerland, Slovenia, Germany, Armenia, Copenhagen, and Swedish Lapland. 
 							<br> Pictures of myself taken by my siblings. All rights reserved.
 						</p>
-						<div class="box alt">
+						<!--<div class="box alt">
 							<div class="row gtr-50 gtr-uniform">
 								<div class="col-4"><span class="image fit"><img src="images/pictures/Hannut2.jpeg" alt="" /></span></div>
 								<div class="col-4"><span class="image fit"><img src="images/pictures/Hannut1.jpeg" alt="" /></span></div>
@@ -95,6 +97,26 @@
 								<div class="col-12"><span class="image fit"><img src="images/pictures/schwyz3.jpg" alt="" /></span></div>
 							</div>
 						</div>
+					-->
+						<div class="photo-slider">
+
+							<div><img src="images/pictures/Hannut2.jpeg"></div>
+							<div><img src="images/pictures/Hannut1.jpeg"></div>
+							<div><img src="images/pictures/Hannut3.jpeg"></div>
+							<div><img src="images/pictures/rando4.jpeg"></div>
+							<div><img src="images/pictures/rando2.jpeg"></div>
+							<div><img src="images/pictures/rando5.jpeg"></div>
+							<div><img src="images/pictures/Tobi1.jpeg"></div>
+							<div><img src="images/pictures/Tobi2.jpeg"></div>
+							<div><img src="images/pictures/Tobi4.jpeg"></div>
+							<div><img src="images/pictures/cph3.jpeg"></div>
+							<div><img src="images/pictures/cph2.jpeg"></div>
+							<div><img src="images/pictures/sunrise1.jpeg"></div>
+							<div><img src="images/pictures/Ararat.jpeg"></div>
+							<div><img src="images/pictures/aurora.jpeg"></div>
+							<div><img src="images/pictures/schwyz3.jpg"></div>
+
+						</div>
 
 					</section>
 
@@ -116,12 +138,29 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+
+		<script src="slick/slick.min.js"></script>
+
+		<script>
+		$(document).ready(function(){
+		$('.photo-slider').slick({
+			dots: true,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			centerMode: true,
+			variableWidth: true
+		});
+		});
+		</script>
+
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
